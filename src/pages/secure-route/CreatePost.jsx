@@ -65,8 +65,7 @@ const CreatePost = () => {
   useEffect(() => {
     return () => {
       setUser(getCurrentUser());
-      getCategories()
-        .then((data) => {
+      getCategories().then((data) => {
           setCategory(data);
         })
         .catch((error) => {

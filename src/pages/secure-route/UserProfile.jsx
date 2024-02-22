@@ -11,9 +11,7 @@ const UserProfile = () => {
   
   const {userId} = useParams();
 
-  const [avater, setAvater] = useState({
-    image_Name:''
-  });
+  const [avater, setAvater] = useState('default_user_avater');
   const [file, setFile] = useState('');
   const [isAvaterTouched, setIsAvaterTouched] = useState(false);
 
@@ -25,8 +23,6 @@ const UserProfile = () => {
     comfirmPassword:'',
   })
 
-  console.log(userDetails)  
-
 
   useEffect(() => {
     return () => {
@@ -37,15 +33,14 @@ const UserProfile = () => {
           email:email,
           about:about,
         })
-        setAvater({image_Name:image_Name});
-        //console.log(name, email, about, image_Name)
+        setAvater(image_Name);
       }
       window.scroll(0,0)
     };
-  }, [avater]);
+  }, []);
 
 
-  console.log(avater)
+  //console.log(avater)
   const Ttoken = getToken();
 
   // change avater handler
