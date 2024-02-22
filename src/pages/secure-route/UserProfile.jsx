@@ -11,7 +11,9 @@ const UserProfile = () => {
   
   const {userId} = useParams();
 
-  const [avater, setAvater] = useState('');
+  const [avater, setAvater] = useState({
+    image_Name:''
+  });
   const [file, setFile] = useState('');
   const [isAvaterTouched, setIsAvaterTouched] = useState(false);
 
@@ -35,8 +37,8 @@ const UserProfile = () => {
           email:email,
           about:about,
         })
-        setAvater(image_Name);
-        console.log(name, email, about, image_Name)
+        setAvater({image_Name:image_Name});
+        //console.log(name, email, about, image_Name)
       }
       window.scroll(0,0)
     };

@@ -24,7 +24,7 @@ const CreatePost = () => {
   /* For File State */
   const [file, setFile] = useState(null);
   /* For Users State */
-  const [user, setUser] = useState(undefined);
+  const [user, setUser] = useState(getCurrentUser());
   /* For Posts State */
   const [postData, setPost] = useState({
     postId: randomNum,
