@@ -11,7 +11,7 @@ const UserProfile = () => {
   
   const {userId} = useParams();
 
-  const [avater, setAvater] = useState('default_user_avater');
+  const [avater, setAvater] = useState('');
   const [file, setFile] = useState('');
   const [isAvaterTouched, setIsAvaterTouched] = useState(false);
 
