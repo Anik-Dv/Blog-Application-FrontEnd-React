@@ -17,6 +17,11 @@ Insert gif or link to demo
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 
+## Application Working Flowchart
+![blogbounty-frontend-app-flowchart](https://github.com/Anik-Dv/Blog-Application-FrontEnd-React/assets/104680177/8574da40-d4c8-4058-a7f8-7d0f23be1f16)
+
+
+
 ## Features
 
 - User-Friendly Interface: The project aims to provide a modern and visually appealing interface that makes it easy for users to navigate, read, and interact with blog posts. This includes features such as responsive design for mobile devices and accessibility enhancements for users with disabilities.
